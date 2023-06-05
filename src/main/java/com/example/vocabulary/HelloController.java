@@ -1,14 +1,21 @@
 package com.example.vocabulary;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+
+import java.util.Arrays;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+    public ListView listView = new ListView<>();
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    // ArrayList
+    // LinkedList
+    // ArrayDeque
+
+    public void action(ActionEvent actionEvent) {
+        listView.getItems().add("Archil");
+        listView.getItems().add("Ivan");
     }
 }
