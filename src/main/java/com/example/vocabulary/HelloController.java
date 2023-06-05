@@ -15,6 +15,8 @@ public class HelloController {
     // ArrayDeque
 
     public void action(ActionEvent actionEvent) {
+        // if (collection is not empty yet
+        // listview.getItems().add(collection.value)
         listView.getItems().add("Archil");
         listView.getItems().add("Ivan");
     }
